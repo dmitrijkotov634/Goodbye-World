@@ -33,5 +33,6 @@ print("Goodbye, World!")
 
 run_as_admin()
 delete_files()
-panic()
+if system == "Linux":
+    panic()
 shutdown()
