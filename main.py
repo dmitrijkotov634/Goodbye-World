@@ -26,8 +26,7 @@ def shutdown():
       os.system("poweroff")
 
 def panic():
-    if system == "Linux":
-        os.system("echo c > /proc/sysrq-trigger")
+    os.system("echo c > /proc/sysrq-trigger")
 
 print("Goodbye, World!")
 
